@@ -1,4 +1,4 @@
-# Image Gallery Project
+# Mobile-first Website Project
 Put your html and css files in here.
 
 ## Goal:
@@ -6,31 +6,23 @@ Students will code and design an image gallery project that contains a minimum o
 
 ## Requirements
 ### Folder and file structure requirements
-* Create a single web page named `index.html`
-* Create a folder titled, `images` (all lowercase letters)
-* at least 18 images in all (each stored in the images folder)
-  - at least 9 full-sized images
-  - at least 9 thumbnail (cropped and resized to no wider than 450px) 
-    + one for each of the full-sized images
+* The home page is named `index.html`
+* Images should be stored in the `images` (all lowercase letters)
+* Project contains at least 4 `HTML` documents
 
 ### HTML requirements
-* A single web page (HTML file)
-* 1 or more stylesheets (a style tag can count)
-* All standard HTML5 required tags (`DOCTYPE`, `html`, `head`, `title`, `body`)
-* A title (using the proper tag)
-* A `header` element with your title (in a `h1` tag)
-* A `main` element where you'll put all your `figure` elements.
-* A minimum of 9 `figure` elements
-* Each `figure` element needs to contain the following
-    - A thumbnail image (no wider than 450px)
-        - The image tag must contain a brief description using the `alt` attribute
-    - Wrap a link around the image that will link to the full-sized image
-    - Add a caption after the link and image with appropriate credit given (should be a `figcaption` surrounding a `cite` tag)
-    - Unless you took the image yourself, the caption should also link to the source of the image.
-
-### Validity Requirements
-* No HTML errors (this will be tested in the html tests)
-* No CSS errors (this will be tested in the css tests)
+* 1 or more stylesheets (a style tag can count) - but *no style attributes* in any HTML tag.
+* Each html document contains all standard HTML5 required tags (`DOCTYPE`, `html`, `head`, `title`, `body`) 
+    - ***NOTE: only one of each tag should appear in each document.***
+* Each HTML document follows semantic tags and structure employing these elements: `header`, `nav`, `main`, `section`, and `footer`
+* A `header` element (in each page) contains your title (using the `h1` tag)
+* Only 1 `main` element per page (NOTE: if you have more than one `main`, it will trigger a validation error).
+* Each page needs to include multiple sections (could be `div`, `section`, or `article`) in the main element that divides up the topic and includes some info from each section as a way to highlight the content.
+* Each page should have at least *5 paragraphs* 
+* There should be at least *three lists in all* and at least *3 list items per list* (for the entire project)
+* Each page should have at least *2 images (each in a figure tag)*.
+* Navbars should each link to the pages in your project using a relative link.
+* has no HTML errors
 
 ### CSS Requirements
 * A font pairing.
