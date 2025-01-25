@@ -58,9 +58,15 @@ def test_for_colors_applied_to_headings(results):
     assert "pass" == results[:4]
 
 
+@pytest.fixture
+def styles_by_files():
+    styles = css.get_styles_by_html_files(project_dir)
+    return styles
+
+
 applied_properties_goals = {
         "figure": {
-            "properties": ("margin", "padding", "border"),
+            "properties": ("padding", "border", "background-color"),
         }
     }
 
@@ -72,3 +78,18 @@ applied_properties_report = css.get_properties_applied_report(
 @pytest.mark.parametrize("results", applied_properties_report)
 def test_figure_styles_applied(results):
     assert "fail:" not in results[:5]
+
+
+def test_for_breakpoints(styles_by_files):
+    # at least one break point per file
+    expected_num = len(styles_by_files)
+    breakpoints = 0
+    for styles in styles_by_files:
+        for stylesheet in styles.get("stylesheets"):
+            at_rules = css.get_all_at_rules(stylesheet)
+            if at_rules:
+                for at_rule in at_rules:
+                    rule = at_rule[1].get("at_rule")
+                    if "@media screen" in rule:
+                        breakpoints += 1
+    assert expected_num >= breakpoints

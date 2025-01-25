@@ -2,7 +2,7 @@
 Put your html and css files in here.
 
 ## Goal:
-Students will code and design an image gallery project that contains a minimum of 9 related thumbnail-sized images that when clicked open up a full-sized version of those images. The design of the layout should be a grid of images that are styled using fonts, colors, borders, and other styles.
+Students will develop a multi-page, mobile-first website with structured HTML and formatted content using CSS that is designed first for a hand-held width, and then adjusted through `@media` breakpoints to look more appropriate for wider widths.
 
 ## Requirements
 ### Folder and file structure requirements
@@ -25,19 +25,23 @@ Students will code and design an image gallery project that contains a minimum o
 * has no HTML errors
 
 ### CSS Requirements
-* A font pairing.
-* Background color set on the page and at least 1 other color set for text.
+* Stylesheets target a font pairing.
+* Background color and color set on the page.
+* A different color applied for headings (h1, h2, etc.)
 * Any color or background color set on an element passes the AIM color contrast checker
     - Must pass at a AAA rating for any non-heading
     - May pass at a AA rating for headings
-* The container uses the `flex` property and related flex properties to contribute to the layout.
-* The figures are styled using the `margin`, `border`, `padding`, and `background-color` properties
+* At least two of your elements use the `flex` and/or `grid` property and related  properties to contribute to the layout.
+* Any figures are styled using the `border`, `padding`, and `background-color` properties.
+* There are no `CSS` validation errors.
 
 ### Design Requirements
+Your design score is independent from the HTML or CSS tests and will be based on the video of your webpage at different widths.
 * Content must be visible and readable (with high contrast)
-* Images are all related in some way (through topic or theme)
-* Fonts, colors, and any other styling is consistent with the theme of the images
-* Layout is fluid and works on any browser/viewport width
+* Layout is appropriate for a hand-held width including a menu-toggle button and slide-out menu
+* Layout is appropriate for a full-screen width.
+* Use of color and typography enhance readability and are consistent with the topic of the cite
+* Header should contain a background image that is consistent with the topic selected.
 
 ### Assignment Submission Requirements
 * Student must commit and push their changes to the repo (repo has the latest work)
